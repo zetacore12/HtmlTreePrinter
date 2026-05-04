@@ -2,7 +2,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import java.util.List;
 
-public class HtmlTreePrettyPrinter {
+public class HtmlTreePrinter {
 
     // 設定
     static final int MAX_DEPTH = 6;
