@@ -6,7 +6,7 @@ import org.jsoup.nodes.Node;
 public class HtmlTreePrinter {
 
     public static void main(String[] args) throws Exception {
-        String url = "https://tenki.jp/forecast/1/2/1400/1100/10days.html";
+        String url = args[0];
 
         Document doc = Jsoup.connect(url).get();
         printNode(doc, 0);
