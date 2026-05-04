@@ -3,7 +3,7 @@ name: Build Run
 on:
   workflow_dispatch:
     inputs:
-      class_name:
+      url:
         description: 'URL'
         required: true
 
@@ -29,4 +29,5 @@ jobs:
 
        - name: Run jar
          run: |
-           java -jar build/libs/*.jar
+           java -jar build/libs/*.jar \
+             "${{ github.event.inputs.url }}"
