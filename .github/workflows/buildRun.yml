@@ -2,6 +2,10 @@ name: Build Run
 
 on:
   workflow_dispatch:
+    inputs:
+      class_name:
+        description: 'URL'
+        required: true
 
 jobs:
   build:
